@@ -18,7 +18,7 @@ pipeline{
         sh 'mvn test'
       }
       }
-    stage("Build & SonarQube analysis") {
+    /* stage("Build & SonarQube analysis") {
             agent any
             steps {
               withSonarQubeEnv('SonarSpring') {
@@ -75,7 +75,7 @@ pipeline{
 )
      }}
      
-    
+    */
   }
  
   }
