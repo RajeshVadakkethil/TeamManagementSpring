@@ -18,16 +18,16 @@ pipeline{
         sh 'mvn test'
       }
       }
-    /* stage("Build & SonarQube analysis") {
+     stage("Build & SonarQube analysis") {
             agent any
             steps {
-              withSonarQubeEnv('SonarSpring') {
+              withSonarQubeEnv('Sonar-Team') {
                 sh 'java -version'
                 sh 'mvn clean package sonar:sonar'
               }
             }
           }
-           stage("Quality gate") {
+         /* stage("Quality gate") {
             steps {
                 waitForQualityGate abortPipeline: true
             }
